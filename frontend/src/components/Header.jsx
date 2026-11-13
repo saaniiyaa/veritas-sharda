@@ -23,11 +23,6 @@ export default function Header({ health, isPingingHealth, checkHealth }) {
                     ध्वनि कवच
                   </span>
                 </h1>
-                {/* Round 1 Build Badge */}
-                <span className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/30">
-                  <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
-                  Round 1 Build (25%)
-                </span>
               </div>
               <p className="text-xs sm:text-sm text-slate-400 font-mono tracking-wide mt-0.5">
                 AI Voice Cloning &amp; Deepfake Defense

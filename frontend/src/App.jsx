@@ -2,7 +2,6 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import Header from './components/Header';
 import UploadRecordCard from './components/UploadRecordCard';
 import ForensicResultsPanel from './components/ForensicResultsPanel';
-import RoadmapCard from './components/RoadmapCard';
 import {
   AlertTriangle,
   RefreshCw,
@@ -205,7 +204,7 @@ export default function App() {
         {/* Primary Dashboard Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
           
-          {/* Left Column: Upload/Record & Roadmap (5 Cols on LG) */}
+          {/* Left Column: Upload/Record (5 Cols on LG) */}
           <div className="lg:col-span-5 space-y-6 sm:space-y-8">
             <UploadRecordCard
               onAnalyze={handleAnalyze}
@@ -214,8 +213,6 @@ export default function App() {
               setSelectedFile={setSelectedFile}
               backendOnline={isBackendHealthy}
             />
-
-            <RoadmapCard />
           </div>
 
           {/* Right Column: Forensic Results Panel (7 Cols on LG) */}
